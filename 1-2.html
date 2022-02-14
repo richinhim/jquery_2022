@@ -6,15 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .highlight{
+            font-style: italic;
+            background-color: #0f0;
+        }
+    </style>
 </head>
 <script>
     $(document).ready(function(){
-        
-        $('p').addClass('highlight');
-       
+
+        //$('p').addClass('highlight');
+        $('span:contains(Life)').addClass('highlight');
+        $('div:odd').addClass('highlight');
+
+        $('div:even').addClass('boundary');
+
+        $('p:eq(1)').addClass('highlight')
     })
 </script>
 <body>
     <p>test</p>
+    <span>Life is so Good</span>
+    <div>a</div>
+    <div>b</div>
+    <p>joshua</p>
 </body>
 </html>
